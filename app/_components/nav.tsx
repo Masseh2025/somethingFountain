@@ -25,7 +25,10 @@ export function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="#" className="flex hover:bg-accent focus:bg-accent">
+            <Link
+              href="/about"
+              className="flex hover:bg-accent focus:bg-accent"
+            >
               <span>
                 <InfoIcon />
               </span>
