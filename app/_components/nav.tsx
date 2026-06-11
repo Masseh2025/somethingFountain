@@ -7,7 +7,7 @@ import Logo from "./logo";
 export function Nav() {
   return (
     <header>
-      <nav className="flex max-w-7xl w-full justify-between items-center py-4 border-b-2 border-foreground mx-auto">
+      <nav className="flex max-w-7xl w-full justify-between items-center py-4  mx-auto">
         <div className="nav-logo flex items-center">
           <Logo />
           somethingFountain
@@ -36,7 +36,10 @@ export function Nav() {
             </Link>
           </li>
           <li>
-            <Link href="#" className="flex hover:bg-accent focus:bg-accent">
+            <Link
+              href="/premium"
+              className="flex hover:bg-accent focus:bg-accent"
+            >
               <span>
                 <Crown />
               </span>
@@ -56,6 +59,7 @@ export function Nav() {
           </Button>
         </ul>
       </nav>
+      <div className="absolute h-[2px] w-full bg-foreground"></div>
     </header>
   );
 }
