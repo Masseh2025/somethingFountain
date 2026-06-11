@@ -1,0 +1,58 @@
+import { Button } from "@/components/ui/button";
+import { Cog, Crown, InfoIcon, StarIcon } from "lucide-react";
+// import Image from "next/image";
+import Link from "next/link";
+import Logo from "./logo";
+
+export function Nav() {
+  return (
+    <header>
+      <nav className="flex max-w-7xl w-full justify-between items-center py-4 border-b-2 border-foreground mx-auto">
+        <div className="nav-logo flex items-center">
+          <Logo />
+          somethingFountain
+        </div>
+        <ul className="flex gap-20 items-center">
+          <Button asChild>
+            <Link href="/start">Start</Link>
+          </Button>
+          <li>
+            <Link href="#" className="flex hover:bg-accent focus:bg-accent">
+              <span>
+                <Cog />
+              </span>
+              settings
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="flex hover:bg-accent focus:bg-accent">
+              <span>
+                <InfoIcon />
+              </span>
+              about
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="flex hover:bg-accent focus:bg-accent">
+              <span>
+                <Crown />
+              </span>
+              premium
+            </Link>
+          </li>
+          <li>
+            <Link href="#" className="flex hover:bg-accent focus:bg-accent">
+              <span>
+                <StarIcon />
+              </span>
+              favorites
+            </Link>
+          </li>
+          <Button asChild>
+            <Link href="#">Login</Link>
+          </Button>
+        </ul>
+      </nav>
+    </header>
+  );
+}
