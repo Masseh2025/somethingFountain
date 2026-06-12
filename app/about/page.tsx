@@ -9,7 +9,7 @@ export default function About() {
         timer of 1-3 minutes. With the minutes allocated you have to write a
         short story based on a given prompt. When time is finish you and another
         will see each others story. There are no winners. You can save storys,
-        and interact with people for a rematch.
+        and interact with people for a rematch. There is also solo mode.
       </p>
 
       <p>Click the start button to begin a match!!!</p>
