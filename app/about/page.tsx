@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <main className="flex flex-col max-w-7xl w-full mx-auto">
-      <h1 className="mb-4 mt-8 text-xl">
+      <h1 className="mb-4 mt-8 text-4xl">
         What is somethingFountain? (prob will change)
       </h1>
       <p className="mb-4">

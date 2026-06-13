@@ -8,16 +8,19 @@ export function Nav() {
   return (
     <header>
       <nav className="flex max-w-7xl w-full justify-between items-center py-4  mx-auto">
-        <div className="nav-logo flex items-center">
+        <Link href="/start" className="nav-logo flex items-center">
           <Logo />
           somethingFountain
-        </div>
+        </Link>
         <ul className="flex gap-20 items-center">
           <Button asChild>
             <Link href="/start">Start</Link>
           </Button>
           <li>
-            <Link href="#" className="flex hover:bg-accent focus:bg-accent">
+            <Link
+              href="/settings"
+              className="flex hover:bg-accent focus:bg-accent"
+            >
               <span>
                 <Cog />
               </span>
